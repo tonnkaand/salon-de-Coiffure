@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class Inscription extends StatelessWidget {
   const Inscription({Key? key}) : super(key: key);
@@ -51,17 +52,18 @@ class Inscription extends StatelessWidget {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(
-                      'assets/image_4311.png',
-                      width: 100,
-                      height: 100,
-                      fit: BoxFit.cover,
-                    ),
-                    const SizedBox(width: 16),
+                    
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                         children: [
+                    Image.asset(
+                      'assets/image_4311.png',
+                      width: 350,
+                      height: 150,
+                      fit: BoxFit.cover,
+                    ),
+                      
                           const Text(
                             'Coupe hair Style',
                             style: TextStyle(
@@ -172,38 +174,49 @@ class Inscription extends StatelessWidget {
                         ],
                       ),
                     ),
+                       ],
+                ),
                     const SizedBox(width: 16),
-                    Column(
+                    Row(
                       children: [
-                        SizedBox(
-                          width: 80,
-                          height: 80,
-                          child: Image.asset('assets/Home.png'), // Image avec dimensions spécifiques
+                        Center(
+                          child: SizedBox(
+                            width: 80,
+                            height: 80,
+                            child: Image.asset('assets/Home.png'), // Image avec dimensions spécifiques
+                          ),
                         ),
                         const SizedBox(height: 10),
-                        SizedBox(
-                          width: 80,
-                          height: 80,
-                          child: Image.asset('assets/Barbershop.png'), // Image avec dimensions spécifiques
+                        Center(
+                          child: SizedBox(
+                            width: 80,
+                            height: 80,
+                            child: Image.asset('assets/Barbershop.png'), // Image avec dimensions spécifiques
+                          ),
                         ),
                         const SizedBox(height: 10),
-                        SizedBox(
-                          width: 80,
-                          height: 80,
-                          child: Image.asset('assets/apple.png'), // Image avec dimensions spécifiques
+                        Center(
+                          child: SizedBox(
+                            width: 80,
+                            height: 80,
+                            child: Image.asset('assets/apple.png'), // Image avec dimensions spécifiques
+                          ),
                         ),
                         const SizedBox(height: 10),
-                        SizedBox(
-                          width: 80,
-                          height: 80,
-                          child: Image.asset('assets/Star.png'), // Image avec dimensions spécifiques
+                        Center(
+                          child: SizedBox(
+                            width: 80,
+                            height: 80,
+                            child: Image.asset('assets/Star.png'), // Image avec dimensions spécifiques
+                          ),
                         ),
                       ],
                     ),
-                  ],
-                ),
+               
                 const SizedBox(height: 30),
-                Image.asset('assets/image1_4291.png'), // Ajoutez l'image de pied de page
+                Center(
+                  child: Image.asset('assets/image1_4291.png'), // Ajoutez l'image de pied de page
+                ),
                 const SizedBox(height: 20),
               ],
             ),
